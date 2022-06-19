@@ -1,0 +1,119 @@
+/*
+Assignment 7 Starter CSS
+===================================
+
+* IMPORTANT:
+
+The default CSS for each activities box is as follows:
+
+article > div {
+	width: 150px;
+	height: 150px;
+	background-color: red;
+}
+
+This means to change either a width, height or background-color, you only need to
+target .activity1 (where or .activity2, .activity3, etc.) For example, if you
+want to override the red background colour of the box in activity seven, you would use:
+
+.activity7 {
+	background-color: blue;
+}
+
+Be sure to comment and order EACH ACTIVITY so I can find what I'm looking for 
+while grading. Fact: happy graders give happy grades!
+
+No need to add any styles for beautification, this exercise is purely
+utilitarian! Only add the styles that are NEEDED to make each activity work.
+
+Good luck!
+
+===================================
+EDIT THIS FILE STARTING BELOW HERE:
+*/
+
+
+/* activity 1 */
+.activity1 {
+	position: relative;
+	left:0;
+	transition: 4s;
+}
+.activity1:hover {
+	Left:100px;
+}
+
+
+/*activity 2*/
+.activity2 {
+	transition: 1s
+}
+.activity2:hover {
+	width: 300px;
+	height: 300px;
+}
+
+/*activity 3*/
+.activity3 {
+	transition: 1s;
+}
+.activity3:hover {
+	width: 75px;
+	height: 75px;
+}
+
+/*activity 4*/
+.activity4 {
+	transition: 1s;
+}
+.activity4:hover {
+	background-color: blue;
+	width: 300px;
+	transition-timing-function: ease-in-out;
+}
+
+/*activity 5*/
+.activity5 {
+	transition: transform 3s;
+}
+.activity5:hover {
+	transform: rotate(720deg); 
+}
+
+/*activity 6*/
+.activity6 {
+	transition: transform;
+	transition-duration: 2s;
+	transition-timing-function: linear;
+	transition-delay: 1s;
+}
+.activity6:hover {
+	 transform: rotate(-360deg);
+}
+ 
+/*activity 7*/
+.activity7 {
+	position: relative;
+	bottom: 0;
+	animation-name: bounce;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+
+}
+@keyframes bounce{
+	0% {bottom:0;}
+	50% {bottom: 1em;}
+	100% {bottom:0;}
+
+}
+
+/*activity 8*/
+@keyframes fade {
+	0% {opacity:1;}
+	100%{opacity:0;}
+}	
+.activity8 {
+	opacity: 0;
+	animation-name:fade;
+	animation-duration: 3s;
+}

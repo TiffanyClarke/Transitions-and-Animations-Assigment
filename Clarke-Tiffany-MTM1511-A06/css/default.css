@@ -1,0 +1,116 @@
+/* 
+ * 	DO NOT EDIT THESE STYLES. THEY ARE HERE FOR
+ * 	PRESENTATION ONLY. USE CSS/STYLES.CSS FOR THE
+ * 	ACTIVITIES.
+*/
+
+/* GENERAL SETUP */
+* {
+	font-family: helvetica neue, helvetica, arial, sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+@keyframes slide-up {
+	0% {
+		opacity: 0;
+		transform: translateY(4rem);
+	}
+
+	100% {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+.wrapper {
+	opacity: 0;
+	width: 90%;
+	min-width: 30em;
+	max-width: 72.5em;
+	margin: 0 auto;
+	animation: slide-up 0.8s ease-out forwards 0.5s;
+}
+
+/* HEADER */
+header {
+	position: relative;
+	width: 100%;
+	background-color: #333;
+	text-align: center;
+	overflow: auto;
+}
+
+@keyframes pop-in {
+	0% {
+		opacity: 0;
+		transform: translateY(-4rem) scale(.8);
+	}
+
+	100% {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+header h1 {
+	opacity: 0;
+	color: #fff;
+	animation: pop-in 1s ease-out forwards;
+}
+
+header h1 span {
+	color: #ccc;
+	font-style: italic;
+	font-size: 0.625em;
+	display: block;
+	font-weight: normal;
+}
+
+aside {
+	padding: 2em 0;
+	border-bottom: 1px solid #ddd;
+}
+
+aside li {
+	margin-bottom: 1em;
+}
+
+aside li:last-child {
+	margin-bottom: 0;
+}
+
+/* BOX CONTROL */
+article {
+	padding: 2em;
+}
+
+article h2 {
+	margin-top: 0;
+}
+
+article:nth-child(even){
+	background-color: #efefef;
+	border-top: 1px dotted #dedede;
+	border-bottom: 1px dotted #dedede;
+}
+
+article > div {
+	width: 150px;
+	height: 150px;
+	background-color: red;
+}
+
+/* FOOTER */
+footer {
+	padding: 2em 0;
+}
+
+footer p {
+	font-weight: bold;
+	font-size: 0.8em;
+	text-align: center;
+}
